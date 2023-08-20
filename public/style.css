@@ -1,0 +1,11 @@
+h1{
+    color: green;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    background-color: aquamarine;
+    border-radius: 8px;
+    
+}

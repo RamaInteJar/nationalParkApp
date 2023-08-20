@@ -1,0 +1,16 @@
+setting up the server
+creat folder
+npm init
+
+install dependencies 
+**mongoose: connect our server with the database
+**ejs: handles the views users sees 
+**method-override: used for delete and put routes
+**morgan: a logger that logs request to the terminal
+**express
+**nodemon
+
+
+//working on the landing page
+**routes
+create home.ejs route aka index page
