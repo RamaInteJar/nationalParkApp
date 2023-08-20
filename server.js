@@ -14,6 +14,13 @@ app.use(express.urlencoded({extended: true}))
 app.get('/', (req, res)=>{
     res.render("Home.ejs")
 })
+
+app.get('/login', (req, res)=>{
+    res.render("auth/login")
+})
+app.get('/signup', (req, res)=>{
+    res.render("auth/signup")
+})
 const Port = 4000
 app.listen(Port, ()=>{
  console.log(`Hello from the server side`);

@@ -17,8 +17,8 @@ button{
     height: 400px;
     line-height: 1px;
     color: green;
-    background-image: url("https://images.unsplash.com/photo-1663429975663-2678b27c5a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
-    background-size:contain;
+    background-image: url("https://static7.depositphotos.com/1002240/786/i/600/depositphotos_7869521-stock-photo-giraffes.jpg");
+    background-size:cover;
     display: block;
     text-align: center;
     padding: 12px;
@@ -27,6 +27,3 @@ button{
     width: 100%;
 }
 
-.landingpage h1{
-    color: white;
-}
