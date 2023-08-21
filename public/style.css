@@ -10,20 +10,41 @@ button{
     width: 150px;
     background-color: aquamarine;
     border-radius: 8px;
-    
+    margin: auto;
 }
 
 .landingpage{
     height: 400px;
     line-height: 1px;
     color: green;
-    background-image: url("https://static7.depositphotos.com/1002240/786/i/600/depositphotos_7869521-stock-photo-giraffes.jpg");
+    background-image: url("https://images.unsplash.com/photo-1619113316651-06ec275a034b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80");
     background-size:cover;
     display: block;
     text-align: center;
-    padding: 12px;
+    padding-top: 12px;
+    padding-bottom: 48px;
     position: absolute;
     top: 128px;
     width: 100%;
+}
+
+
+form{ 
+   background-color: aquamarine;
+   text-align: center;
+   position: absolute;
+  top: 128px;
+   left: 30%;
+   width: 600px;
+   display:grid;
+   height: 700px;
+   border-radius: 8px;
+}
+
+input{
+    margin:  auto;
+   width: 500px;
+   height: 48px;
+    border-radius: 8px;
 }
 

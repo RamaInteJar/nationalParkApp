@@ -18,8 +18,16 @@ app.get('/', (req, res)=>{
 app.get('/login', (req, res)=>{
     res.render("auth/login")
 })
+app.post('/login', (req, res)=>{
+    console.log(req.body);
+    res.send(req.body)
+})
 app.get('/signup', (req, res)=>{
     res.render("auth/signup")
+})
+app.post('/signup', (req, res)=>{
+    console.log(req.body);
+    res.send(req.body)
 })
 const Port = 4000
 app.listen(Port, ()=>{
