@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const exprssLayouts = require("express-ejs-layouts")
+const User = require("./models/user")
 
 app.set("view engine", "ejs")
 //MIDDLEWARES
@@ -29,7 +30,7 @@ app.post('/signup', (req, res)=>{
     console.log(req.body);
     res.send(req.body)
 })
-const Port = 4000
+const Port = 4800
 app.listen(Port, ()=>{
  console.log(`Hello from the server side`);
 })
