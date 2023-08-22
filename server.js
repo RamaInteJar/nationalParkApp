@@ -1,24 +1,32 @@
 const express = require("express");
 const app = express();
 const exprssLayouts = require("express-ejs-layouts");
-const authRoutes =require("./controller/authController")
-
+const authRoutes = require("./controller/authController");
+const session = require("express-session");
 
 app.set("view engine", "ejs");
 //MIDDLEWARES
 app.use(express.static("public"));
 app.use(exprssLayouts);
-
+app.use(session({ secret: "someUniquStrings", cookie: { maxAge: 5000000 } }));
 //Without express urlencoded we can not use form data
 app.use(express.urlencoded({ extended: true }));
 
-app.use(authRoutes)
-
+app.use(authRoutes);
 //creating index page aka homepage
 app.get("/", (req, res) => {
   res.render("Home.ejs");
 });
+app.use((req, res, next) => {
+  if (!req.session.userId) {
+    res.redirect("/login");
+  }
+  next();
+});
 
+app.get("/parks", (req, res) => {
+  res.render("parks/index.ejs");
+});
 
 const Port = 4800;
 app.listen(Port, () => {
