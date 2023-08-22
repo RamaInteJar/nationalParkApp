@@ -3,6 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 position: relative;
+background-image: url("https://images.unsplash.com/photo-1621682372775-533449e550ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80");
 }
 
 button{
@@ -14,7 +15,7 @@ button{
 }
 
 .landingpage{
-    height: 400px;
+    height: 200px;
     line-height: 1px;
     color: green;
     background-image: url("https://st2.depositphotos.com/1025317/10950/i/600/depositphotos_109505182-stock-photo-under-a-shining-sun-two.jpg");
@@ -25,7 +26,7 @@ button{
     padding-bottom: 48px;
     position: absolute;
     top: 128px;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -57,5 +58,10 @@ input{
     padding-top: 50px;
     font-size: 24px;
     margin-top: 0;
+}
+
+.imageContainer{
+    height: 400px;
+    width: 400px;
 }
 

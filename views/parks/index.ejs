@@ -1,4 +1,20 @@
-<% [{name:"Serengeti National Park"}, {name:"Kruger National Park"},
-{name:"Mount Kilimanjaro National Park"},{name:"Arusha National Park"} ,{name:"Serengeti National Park"}].forEach(park => {%>
-    <h1><%= park.name%></h1>
-<%}); %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <% parks.forEach(park => {%>
+      <h1><%= park.name%></h1>
+      <div class="imageContainer">
+        <img src="<%= park.image %>" />
+      </div>
+      <p><%=park.description%></p>
+      <button><%= park.entrancFee %></button>
+      <%}); %>
+    </div>
+  </body>
+</html>
