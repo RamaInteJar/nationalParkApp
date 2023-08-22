@@ -1,36 +1,26 @@
-const express = require("express")
-const app = express()
-const exprssLayouts = require("express-ejs-layouts")
-const User = require("./models/user")
+const express = require("express");
+const app = express();
+const exprssLayouts = require("express-ejs-layouts");
+const authRoutes =require("./controller/authController")
 
-app.set("view engine", "ejs")
+
+app.set("view engine", "ejs");
 //MIDDLEWARES
-app.use(express.static("public"))
-app.use(exprssLayouts)
+app.use(express.static("public"));
+app.use(exprssLayouts);
 
 //Without express urlencoded we can not use form data
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({ extended: true }));
+
+app.use(authRoutes)
 
 //creating index page aka homepage
-app.get('/', (req, res)=>{
-    res.render("Home.ejs")
-})
+app.get("/", (req, res) => {
+  res.render("Home.ejs");
+});
 
-app.get('/login', (req, res)=>{
-    res.render("auth/login")
-})
-app.post('/login', (req, res)=>{
-    console.log(req.body);
-    res.send(req.body)
-})
-app.get('/signup', (req, res)=>{
-    res.render("auth/signup")
-})
-app.post('/signup', (req, res)=>{
-    console.log(req.body);
-    res.send(req.body)
-})
-const Port = 4800
-app.listen(Port, ()=>{
- console.log(`Hello from the server side`);
-})
+
+const Port = 4800;
+app.listen(Port, () => {
+  console.log(`Hello from the server side`);
+});
