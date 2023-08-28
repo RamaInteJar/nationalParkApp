@@ -12,6 +12,7 @@ app.use(exprssLayouts);
 app.use(session({ secret: "someUniquStrings", cookie: { maxAge: 5000000 } }));
 //Without express urlencoded we can not use form data
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
 
 app.use(authRoutes);
 //creating index page aka homepage

@@ -6,15 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
+    <div class="image">
       <% parks.forEach(park => {%>
       <h1><%= park.name%></h1>
-      <div class="imageContainer">
-        <img src="<%= park.image %>" />
-      </div>
       <p><%=park.description%></p>
-      <button><%= park.entrancFee %></button>
-      <%}); %>
+      <%= park.entrancFee %>
     </div>
+    <%}); %>
   </body>
 </html>
