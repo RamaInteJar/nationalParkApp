@@ -65,9 +65,8 @@ input {
   height: 400px;
   width: 500px;
   padding-top: 12px;
-  margin-left: 120px;
+  margin-left: 30px;
   background-image: url("https://images.unsplash.com/photo-1623952625109-6c47a93f675c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2352&q=80");
   background-size: cover;
   border-radius: 8px;
-  display: flex;
 }
